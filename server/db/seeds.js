@@ -48,6 +48,62 @@ db.spaceApp.insertMany([
     numberOfMoons: "2",
     temperature: "150 - 310 K",
     description: "TBC"
+  },
+  {
+    type: "planet",
+    name: "Jupiter",
+    orbitalPeriodPYear: "11.862 Earth years",
+    rotationalPeriodDay: "9.84 Earth hours",
+    distanceFromSun: "483.6 million miles",
+    diameter: "88,729 miles",
+    numberOfMoons: "67",
+    temperature: "120 K",
+    description: "TBC"
+  },
+
+  {
+    type: "planet",
+    name: "Saturn",
+    orbitalPeriodPYear: "29.456 Earth years",
+    rotationalPeriodDay: "10.2 Earth hours",
+    distanceFromSun: "886.7 million miles",
+    diameter: "74,600 miles",
+    numberOfMoons: "62",
+    temperature: "88 K",
+    description: "TBC"
+  },
+  {
+    type: "planet",
+    name: "Uranus",
+    orbitalPeriodPYear: "84.07 Earth years",
+    rotationalPeriodDay: "17.9 Earth hours",
+    distanceFromSun: "1,784.0 million miles",
+    diameter: "32,600 miles",
+    numberOfMoons: "27",
+    temperature: "59 K",
+    description: "TBC"
+  },
+  {
+    type: "planet",
+    name: "Neptune",
+    orbitalPeriodPYear: "164.81 Earth years",
+    rotationalPeriodDay: "19.1 Earth hours",
+    distanceFromSun: "2,794.4 million miles",
+    diameter: "30,200 miles",
+    numberOfMoons: "13",
+    temperature: "48 K",
+    description: "TBC"
+  },
+  {
+    type: "Dwarf planet",
+    name: "Pluto",
+    orbitalPeriodPYear: "247.7 Earth years",
+    rotationalPeriodDay: "6.39 Earth days",
+    distanceFromSun: "3,674.5 million miles",
+    diameter: "1,413 miles",
+    numberOfMoons: "4",
+    temperature: "37 K",
+    description: "TBC"
   }
 
 ])

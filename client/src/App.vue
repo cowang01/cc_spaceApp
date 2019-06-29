@@ -14,6 +14,16 @@ export default {
   name: 'app',
   components: {
 
+  },
+  mounted(){
+    fetch('http://localhost:3000/')
+    .then(res => res.json())
+    .then(json => this.serverMessage = json.message);
+  },
+  data () {
+    return {
+      serverMessage: ""
+    }
   }
 }
 </script>

@@ -10,9 +10,9 @@ app.use(cors());
 
 MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
-  const db = client.db('spaceApp_hub');
-  const spaceCollection = db.collection('space');
-  const spaceRouter = createRouter(spaceCollection);
+  const db = client.db('spaceApp');
+  const spaceAppCollection = db.collection('spaceApp');
+  const spaceRouter = createRouter(spaceAppCollection);
   app.use('/api/space', spaceRouter);
   })
   .catch(console.error);
