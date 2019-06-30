@@ -104,6 +104,45 @@ db.spaceApp.insertMany([
     numberOfMoons: "4",
     temperature: "37 K",
     description: "TBC"
+  },
+  {
+    type: "fact",
+    name: "Mercury",
+    fact: "Mercury is amazing"
+  },
+  {
+    type: "fact",
+    name: "Mercury",
+    fact: "Mercury was named after Freddy Mercury"
+  },
+  {
+    type: "fact",
+    name: "Earth",
+    fact: "Earth is where you live"
+  },
+  {
+    type: "fact",
+    name: "Mercury",
+    fact: "This planet is really hot!!!"
+  },
+  {
+    type: "fact",
+    name: "Earth",
+    fact: "This planet has the highest population of living creatures know to man, in fact Earth is the ONLY planet we know of capable of supporting our life!"
+  },
+  {
+    type: "fact",
+    name: "Saturn",
+    fact: "I like Saturn"
+  },
+  {
+    type: "fact",
+    name: "Neptune",
+    fact: "WHOOO NEPTUNE!!"
+  },
+  {
+    type: "fact",
+    name: "Neptune",
+    fact: "If you look out the window now you will see Neptune"
   }
-
-])
+]);
