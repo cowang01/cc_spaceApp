@@ -1,13 +1,32 @@
 <template lang="html">
   <div class="">
-    <p>Test-spacebody</p>
+    <ul v-for="(item, key) in displayBody">
+      <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'space-body',
+  props: ['body'],
+  data(){
+    return{
+      displayBody: ''
+    }
+  },
+  watch: {
+    body: function(valNew, valOld) {
+      this.displayBody = valNew
+    }
+  }
 }
 </script>
 
 <style lang="css" scoped>
+  ul{
+    text-align: left;
+    list-style: none;
+  }
+
 </style>
