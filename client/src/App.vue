@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <p>test-apphome</p>
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <router-view id="App"></router-view>
-
   </div>
 </template>
 
@@ -16,9 +14,9 @@ export default {
 
   },
   mounted(){
-    fetch('http://localhost:3000/')
-    .then(res => res.json())
-    .then(json => this.serverMessage = json.message);
+    // fetch('http://localhost:3000/')
+    // .then(res => res.json())
+    // .then(json => this.serverMessage = json.message);
   },
   data () {
     return {

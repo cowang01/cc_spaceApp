@@ -1,8 +1,8 @@
 
 <template lang="html">
   <div class="fact-box">
-    <p>test-fact_box</p>
-    <p>{{all}}</p>
+    <p>{{body.name}} is a {{fact_group}}</p>
+    <p></p>
   </div>
 </template>
 
@@ -22,7 +22,11 @@ export default {
   mounted(){
     SpaceServices.getSpace()
     .then( facts => this.all = facts);
-
+  },
+  watch:{
+    body: function(valNew, valOld){
+      this.fact_group = valNew.type;
+    }
   }
 }
 </script>
@@ -32,8 +36,10 @@ export default {
   .fact-box {
     border-style: solid;
     border-color: black;
-    border-width: thick;
+    border-width: thin;
     text-align: center;
     align-items: center;
+    height: 20%;
+    border-radius: 16px;
   }
 </style>
