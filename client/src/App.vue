@@ -13,6 +13,7 @@
       <area shape="poly" coords="1609,495,1624,497,1638,504,1645,512,1653,523,1660,539,1659,556,1655,568,1647,578,1636,588,1624,594,1605,594,1591,590,1577,580,1569,568,1563,553,1562,537,1567,521,1577,506,1595,496" alt="Uranus" v-on:click="sendName('Uranus')">
       <area shape="poly" coords="1812,479,1830,484,1848,496,1858,510,1868,527,1870,541,1867,559,1860,572,1851,585,1842,592,1832,598,1818,602,1797,601,1778,596,1766,585,1757,575,1751,565,1747,553,1746,538,1748,519,1756,505,1768,492,1783,482" alt="Neptune" v-on:click="sendName('Neptune')">
     </map>
+    <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')">
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <router-view id="App"></router-view>
   </div>
@@ -61,7 +62,21 @@ img {
   z-index: -1;
 }
 
+#comet-img {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: 20;
+}
 
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
