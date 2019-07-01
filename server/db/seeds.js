@@ -108,12 +108,12 @@ db.spaceApp.insertMany([
   {
     type: "Yellow Dwarf Star",
     name: "Sun",
-    orbitalPeriodPYear: "247.7 Earth years",
-    rotationalPeriodDay: "6.39 Earth days",
+    orbitalPeriodPYear: "225 million Earth years",
+    rotationalPeriodDay: "26.24 Earth days",
     distanceFromSun: "N/A",
     diameter: "864,340 miles",
-    numberOfMoons: "4",
-    temperature: "37 K",
+    numberOfSatellites: "8 planets and a large number of smaller objects",
+    temperature: "5,778 K",
     description: "TBC"
   },
   {
