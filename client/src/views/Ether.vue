@@ -18,6 +18,7 @@
 import SpaceBody from '@/components/SpaceBody.vue'
 import SpaceFact from '@/components/SpaceFact.vue'
 import SpaceServices from '@/services/SpaceServices.js'
+import {eventBus} from '@/main.js'
 
 export default {
   components: {
@@ -27,12 +28,16 @@ export default {
   data(){
     return {
       all_planets: [],
-      bodySelect: ""
+      bodySelect: "",
+      bodyName: null
     }
   },
   mounted(){
     SpaceServices.getSpace()
-    .then( space => this.all_planets = space )
+    .then( space => this.all_planets = space );
+
+    eventBus.$on('body-name', (name) => {this.bodyName = name})
+    // {this.bodyName = name}
   },
   methods: {
     bodyChoice(body){
