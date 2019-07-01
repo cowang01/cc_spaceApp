@@ -69,8 +69,9 @@ img {
   top: 90%;
   left: 80%;
   animation-name: rotate;
-  animation-duration: 20s;
-  animation-iteration-count: 20;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+  animation-delay: 0s;
 }
 
 @keyframes rotate {
