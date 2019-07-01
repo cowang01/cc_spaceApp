@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     bodyChoice(body){
-      console.log('test-body_choice')
       this.bodySelect = body
     }
   }
