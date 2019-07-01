@@ -3,7 +3,7 @@ db.dropDatabase();
 
 db.spaceApp.insertMany([
   {
-    type: "planet",
+    type: "Terrestrial",
     name: "Mercury",
     orbitalPeriodPYear: "88 Earth days",
     lenghtOfDay: "58.7 Earth days",
@@ -15,7 +15,7 @@ db.spaceApp.insertMany([
   },
 
   {
-    type: "planet",
+    type: "Terrestrial",
     name: "Venus",
     orbitalPeriodPYear: "224.68 Earth days",
     rotationalPeriodDay: "243 Earth days",
@@ -27,7 +27,7 @@ db.spaceApp.insertMany([
   },
 
   {
-    type: "planet",
+    type: "Terrestrial",
     name: "Earth",
     orbitalPeriodPYear: "365.26 days",
     rotationalPeriodDay: "24 hours",
@@ -39,7 +39,7 @@ db.spaceApp.insertMany([
   },
 
   {
-    type: "planet",
+    type: "Terrestrial",
     name: "Mars",
     orbitalPeriodPYear: "686.98 days",
     rotationalPeriodDay: "24.6 Earth hours",
@@ -50,7 +50,7 @@ db.spaceApp.insertMany([
     description: "TBC"
   },
   {
-    type: "planet",
+    type: "Gas Giant",
     name: "Jupiter",
     orbitalPeriodPYear: "11.862 Earth years",
     rotationalPeriodDay: "9.84 Earth hours",
@@ -62,7 +62,7 @@ db.spaceApp.insertMany([
   },
 
   {
-    type: "planet",
+    type: "Gas Giant",
     name: "Saturn",
     orbitalPeriodPYear: "29.456 Earth years",
     rotationalPeriodDay: "10.2 Earth hours",
@@ -73,7 +73,7 @@ db.spaceApp.insertMany([
     description: "TBC"
   },
   {
-    type: "planet",
+    type: "Ice Giant",
     name: "Uranus",
     orbitalPeriodPYear: "84.07 Earth years",
     rotationalPeriodDay: "17.9 Earth hours",
@@ -84,7 +84,7 @@ db.spaceApp.insertMany([
     description: "TBC"
   },
   {
-    type: "planet",
+    type: "Ice Giant",
     name: "Neptune",
     orbitalPeriodPYear: "164.81 Earth years",
     rotationalPeriodDay: "19.1 Earth hours",
