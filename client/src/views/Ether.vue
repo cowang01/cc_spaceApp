@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <h3>BBC SPACE</h3>
+    <h1>BBC DiscovED</h1>
     <div class="planets">
       <ul class="planets" v-for="body in all_planets">
         <li v-on:click="bodyChoice(body)" v-if="body.type === 'planet'">{{body.name}}</li>

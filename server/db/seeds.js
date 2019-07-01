@@ -3,7 +3,7 @@ db.dropDatabase();
 
 db.spaceApp.insertMany([
   {
-    type: "planet",
+    type: "Terrestrial Planet",
     name: "Mercury",
     orbitalPeriodPYear: "88 Earth days",
     lenghtOfDay: "58.7 Earth days",
