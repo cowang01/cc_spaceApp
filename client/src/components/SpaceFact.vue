@@ -1,7 +1,7 @@
 
 <template lang="html">
   <div class="fact-box">
-    <p>{{body.name}} is a {{fact_group}}</p>
+    <p>{{fact_list[random]}}</p>
     <p></p>
   </div>
 </template>
@@ -15,8 +15,9 @@ export default {
   data() {
     return {
       all: [],
-      fact_list: [],
-      fact_group: 'all'
+      fact_list: ['Click On A Planet To Explore'],
+      fact_group: [],
+      random: 0
     }
   },
   mounted(){
@@ -26,9 +27,18 @@ export default {
   watch:{
     body: function(valNew, valOld){
       this.fact_group = valNew.type;
+      const newFacts = [];
+      this.all.forEach(function(spaceBody){
+        if (spaceBody.type === 'fact' && spaceBody.name === valNew.name){
+          newFacts.push(spaceBody.fact)
+        };
+      })
+      this.fact_list = newFacts;
+      this.random = Math.floor(Math.random()*this.fact_list.length)
     }
   }
 }
+
 </script>
 
 <style lang="css" scoped>
@@ -43,3 +53,5 @@ export default {
     border-radius: 16px;
   }
 </style>
+
+<!-- fact.name === this.fact_group &&  -->

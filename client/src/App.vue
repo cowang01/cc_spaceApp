@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style>
+*{
+  background-image: url();
+  background-size: cover;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
