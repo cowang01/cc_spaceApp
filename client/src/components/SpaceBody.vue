@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div class="planet-info">
     <ul v-for="(item, key) in displayBody">
       <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li>
     </ul>
@@ -30,5 +30,13 @@ export default {
     text-align: left;
     list-style: none;
   }
+
+  .planet-info {
+    width: 25%;
+  	margin: 0 auto;
+  	background: rgba(255, 255, 255, 0.6);
+  	padding: 20px;
+  	margin-bottom: 30px;
+}
 
 </style>
