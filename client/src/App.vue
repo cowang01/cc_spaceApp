@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <p>test-apphome</p>
-    <router-link :to="{ name: 'ether'}">Home</router-link>
+    <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <router-view id="App"></router-view>
-
   </div>
 </template>
 
@@ -22,13 +20,9 @@ export default {
     }
   },
   mounted(){
-    fetch('http://localhost:3000/api/space')
-    .then(res => res.json())
-    .then(bodies => this.bodies = bodies.name);
-  },
-  components: {
-    "space-body": SpaceBody,
-    "space-fact": SpaceFact
+    // fetch('http://localhost:3000/')
+    // .then(res => res.json())
+    // .then(json => this.serverMessage = json.message);
   },
 }
 </script>
