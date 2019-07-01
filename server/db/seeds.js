@@ -106,6 +106,17 @@ db.spaceApp.insertMany([
     description: "TBC"
   },
   {
+    type: "Yellow Dwarf Star",
+    name: "Sun",
+    orbitalPeriodPYear: "247.7 Earth years",
+    rotationalPeriodDay: "6.39 Earth days",
+    distanceFromSun: "N/A",
+    diameter: "864,340 miles",
+    numberOfMoons: "4",
+    temperature: "37 K",
+    description: "TBC"
+  },
+  {
     type: "fact",
     name: "Mercury",
     fact: "Mercury is amazing"
