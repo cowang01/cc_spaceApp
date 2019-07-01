@@ -6,7 +6,7 @@ db.spaceApp.insertMany([
     type: "Terrestrial",
     name: "Mercury",
     orbitalPeriodPYear: "88 Earth days",
-    lenghtOfDay: "58.7 Earth days",
+    rotationalPeriodDay: "58.7 Earth days",
     distanceFromSun: "35.98 million miles",
     diameter: "3,031 miles",
     numberOfSatellites: "0",
