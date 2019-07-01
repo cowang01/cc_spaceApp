@@ -1,4 +1,4 @@
-use spaceApp
+use spaceApp;
 db.dropDatabase();
 
 db.spaceApp.insertMany([

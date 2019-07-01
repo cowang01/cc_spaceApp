@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <p>test-apphome</p>
-    <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
+    <router-link :to="{ name: 'ether'}">Home</router-link>
     <router-view id="App"></router-view>
 
   </div>
@@ -9,22 +9,27 @@
 
 <script>
 
+import SpaceBody from './components/SpaceBody.vue';
+import SpaceFact from './components/SpaceFact.vue';
+
 
 export default {
   name: 'app',
-  components: {
-
-  },
-  mounted(){
-    fetch('http://localhost:3000/')
-    .then(res => res.json())
-    .then(json => this.serverMessage = json.message);
-  },
   data () {
     return {
-      serverMessage: ""
+      bodies: [],
+      selectedBody: null
     }
-  }
+  },
+  mounted(){
+    fetch('http://localhost:3000/api/space')
+    .then(res => res.json())
+    .then(bodies => this.bodies = bodies.name);
+  },
+  components: {
+    "space-body": SpaceBody,
+    "space-fact": SpaceFact
+  },
 }
 </script>
 
