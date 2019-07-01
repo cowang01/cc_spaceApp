@@ -50,17 +50,24 @@ export default {
   /* background-image: url("../dist/img/planet.jpeg"); */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  background-image:100%;
+  /* background-size: 100%;
+  background-image:90%; */
 }
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #white;
+  color: white;
   margin-top: 60px;
 }
 </style>
