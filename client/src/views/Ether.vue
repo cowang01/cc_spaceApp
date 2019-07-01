@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <h1>BBC DiscovED</h1>
+    <h1>BBC DiscoverED</h1>
     <div class="planets">
       <!-- <ul class="planets" v-for="body in all_planets">
         <li v-on:click="bodyChoice(body)" v-if="body.type === 'planet'">{{body.name}}</li>
@@ -10,6 +10,7 @@
     <div class="planet-data">
       <space-body :body="bodySelect"></space-body>
       <space-fact :body="bodySelect"></space-fact>
+      <!-- <list-item :body="bodySelect"></list-item> -->
     </div>
   </div>
 </template>
@@ -19,11 +20,13 @@ import SpaceBody from '@/components/SpaceBody.vue'
 import SpaceFact from '@/components/SpaceFact.vue'
 import SpaceServices from '@/services/SpaceServices.js'
 import {eventBus} from '@/main.js'
+import ListItem from '@/components/ListItem.vue'
 
 export default {
   components: {
     'space-body': SpaceBody,
-    'space-fact': SpaceFact
+    'space-fact': SpaceFact,
+    'list-item': ListItem
   },
   data(){
     return {
@@ -63,9 +66,10 @@ export default {
 
 .planet-data{
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  justify-content: flex-end;
 }
 
 space-body{
