@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style>
-*{
+body {
   background-image: url('../dist/img/planet.jpeg');
   background-size: 100%;
 }
