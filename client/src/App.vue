@@ -7,22 +7,23 @@
 
 <script>
 
+import SpaceBody from './components/SpaceBody.vue';
+import SpaceFact from './components/SpaceFact.vue';
+
 
 export default {
   name: 'app',
-  components: {
-
+  data () {
+    return {
+      bodies: [],
+      selectedBody: null
+    }
   },
   mounted(){
     // fetch('http://localhost:3000/')
     // .then(res => res.json())
     // .then(json => this.serverMessage = json.message);
   },
-  data () {
-    return {
-      serverMessage: ""
-    }
-  }
 }
 </script>
 
