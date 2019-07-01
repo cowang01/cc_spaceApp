@@ -2,9 +2,9 @@
   <div class="">
     <h1>BBC DiscovED</h1>
     <div class="planets">
-      <ul class="planets" v-for="body in all_planets">
+      <!-- <ul class="planets" v-for="body in all_planets">
         <li v-on:click="bodyChoice(body)" v-if="body.type === 'planet'">{{body.name}}</li>
-      </ul>
+      </ul> -->
     </div>
     <br>
     <div class="planet-data">
@@ -42,6 +42,11 @@ export default {
   methods: {
     bodyChoice(body){
       this.bodySelect = body
+    }
+  },
+  watch: {
+    bodyName: function(valNew, valOld){
+      this.bodySelect = this.all_planets.find( findBody => findBody.name === valNew)
     }
   }
 }
