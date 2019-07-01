@@ -29,8 +29,8 @@ export default {
 
 <style>
 *{
-  background-image: url();
-  background-size: cover;
+  background-image: url('../dist/img/planet.jpeg');
+  background-size: 100%;
 }
 
 #app {
