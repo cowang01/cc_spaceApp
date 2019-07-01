@@ -10,7 +10,7 @@
     <div class="planet-data">
       <space-body :body="bodySelect"></space-body>
       <space-fact :body="bodySelect"></space-fact>
-      <list-item :body="bodySelect"></list-item>
+      <!-- <list-item :body="bodySelect"></list-item> -->
     </div>
   </div>
 </template>
@@ -66,9 +66,10 @@ export default {
 
 .planet-data{
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  justify-content: flex-end;
 }
 
 space-body{
