@@ -3,6 +3,7 @@
     <map name="planetmap">
       <img class="map" src="../dist/img/planet.jpeg"  alt="Planets" usemap="#planetmap">
       <area shape="poly" coords="0,144,26,158,47,170,83,196,129,236,163,277,188,316,211,364,228,418,233,473,235,510,229,547,220,596,209,632,192,668,174,699,148,736,129,760,94,788,61,812,19,835,1,843" alt="Sun" v-on:click="sendName('Sun')">
+
       <area shape="poly" coords="321,515,329,517,335,519,340,524,344,531,345,539,344,547,340,558,330,563,318,564,307,561,301,553,297,544,297,536,301,526,309,519" alt="Mercury" v-on:click="sendName('Mercury')">
       <area shape="poly" coords="471,490,482,493,490,498,499,505,507,516,511,527,513,537,513,546,511,555,508,563,504,571,498,577,492,581,486,585,478,589,470,591,461,590,452,587,446,583,438,577,431,570,425,560,421,548,419,533,422,520,429,509,441,498,458,492" alt="Venus" v-on:click="sendName('Venus')">
       <area shape="poly" coords="649,479,675,489,692,503,701,519,704,541,703,558,691,575,679,588,659,596,636,597,619,591,605,581,596,570,590,558,586,540,589,522,593,510,607,492,623,482" alt="Earth" v-on:click="sendName('Earth')">
@@ -13,6 +14,7 @@
       <area shape="poly" coords="1609,495,1624,497,1638,504,1645,512,1653,523,1660,539,1659,556,1655,568,1647,578,1636,588,1624,594,1605,594,1591,590,1577,580,1569,568,1563,553,1562,537,1567,521,1577,506,1595,496" alt="Uranus" v-on:click="sendName('Uranus')">
       <area shape="poly" coords="1812,479,1830,484,1848,496,1858,510,1868,527,1870,541,1867,559,1860,572,1851,585,1842,592,1832,598,1818,602,1797,601,1778,596,1766,585,1757,575,1751,565,1747,553,1746,538,1748,519,1756,505,1768,492,1783,482" alt="Neptune" v-on:click="sendName('Neptune')">
     </map>
+    <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')">
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
     <img class="asteroid" src="../dist/img/asteroid.jpeg" width="170" height="170" alt="Black Hole">
@@ -36,7 +38,7 @@ export default {
   },
   methods: {
     sendName(name){
-      console.log('test-function_', name)
+      // console.log('test-function_', name)
       eventBus.$emit('body-name', name);
     }
   }
@@ -52,24 +54,22 @@ export default {
   z-index: -1;
 }
 
-.black-hole {
-  position: fixed;
-  right: 50px;
-  top: 150px;
-  border-radius: 35px 70px 50px 35px;
-  z-index: -1;
-
+#comet-img {
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+  animation-delay: 0s;
 }
 
-.asteroid {
-  position: fixed;
-  right: 50px;
-  top: 800px;
-  border-radius: 35px 70px 50px 35px;
-  z-index: -1;
-
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
-
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

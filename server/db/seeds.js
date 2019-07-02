@@ -118,6 +118,17 @@ db.spaceApp.insertMany([
     description: "TBC"
   },
   {
+    type: "Comet",
+    name: "Comet",
+    orbitalPeriodPYear: "e.g. 30 million Earth years",
+    rotationalPeriodDay: "N/A",
+    distanceFromSun: "e.g. 55 million miles",
+    diameter: "eg. 5 miles",
+    numberOfSatellites: "3,500",
+    temperature: "Varies greatly",
+    description: "TBC"
+  },
+  {
     type: "fact",
     name: "Mercury",
     fact: "Mercury is the smallest planet in our solar system."
@@ -316,5 +327,15 @@ db.spaceApp.insertMany([
     type: "fact",
     name: "Sun",
     fact: "The Sun travels at 220 kilometres per second."
+  },
+  {
+    type: "fact",
+    name: "Comet",
+    fact: "Comets are leftovers from the dawn of our solar system around 4.6 billion years ago, and consist mostly of ice coated with dark organic material."
+  },
+  {
+    type: "fact",
+    name: "Comet",
+    fact: "Comets are cosmic snowballs of frozen gases, rock and dust that orbit the Sun."
   }
 ]);
