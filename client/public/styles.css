@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-image: url("/black_hole_other.jpg");
+  background-size: cover;
+}
+
+h1 {
+  margin: auto;
+  background-color: #333;
+  width: 350px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+
+.black_hole_left {
+  float: left;
+  width: 350px;
+}
+
+.black_hole_right {
+  float: right;
+  width: 350px;
+}
+
+/* .black_hole_centre {
+  float: center;
+  width: 200px;
+} */
