@@ -16,6 +16,7 @@
     </map>
     <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')">
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
+    <a id="shuttle-img" href="/shuttle.html"><img src="../dist/img/shuttle2.jpg" alt="Space Shuttle"></a>
     <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
     <router-view id="App"></router-view>
     <div class="form">
@@ -122,5 +123,13 @@ export default {
   top: 92%;
   color: #d7d7d9;
   font-family: tahoma;
+}
+
+#shuttle-img {
+  position: absolute;
+  right: 69%;
+  top: 9%;
+  /* z-index: -1; */
+
 }
 </style>
