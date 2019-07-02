@@ -55,9 +55,13 @@ export default {
 
 .black-hole {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  right: 50px;
+  top: 100px;
   z-index: -1;
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+  animation-delay: 0s;
 
 }
 

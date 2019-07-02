@@ -28,7 +28,6 @@ db.spaceApp.insertMany([
 
   {
     type: "Terrestrial",
-    img: "../client/dist/img/Eart.jpg",
     name: "Earth",
     orbitalPeriodPYear: "365.26 days",
     rotationalPeriodDay: "24 hours",
@@ -126,6 +125,17 @@ db.spaceApp.insertMany([
     diameter: "eg. 5 miles",
     numberOfSatellites: "3,500",
     temperature: "Varies greatly",
+    description: "TBC"
+  },
+  {
+    type: "Satallite",
+    name: "Moon",
+    orbitalPeriodPYear: "365 Earth days",
+    rotationalPeriodDay: "N/A",
+    distanceFromSun: "93 million miles",
+    diameter: "2,158.8 miles",
+    numberOfSatellites: "0",
+    temperature: "Around 280 F",
     description: "TBC"
   },
   {
