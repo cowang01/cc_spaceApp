@@ -44,6 +44,8 @@ export default {
 <style lang="css" scoped>
 
   .fact-box {
+    display: inline-block;
+
     font-style: italic;
     font-size: 30px;
     text-align: center;
@@ -51,7 +53,13 @@ export default {
     background-size: contain;
     color: white;
     border: white;
+    background: rgba(255, 255, 255, 0.3);
+  	margin: 0 auto;
+    width: 35%;
+    border-style: solid;
   }
+
+
 </style>
 
 <!-- fact.name === this.fact_group &&  -->

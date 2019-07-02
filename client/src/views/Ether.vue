@@ -6,13 +6,14 @@
         <li v-on:click="bodyChoice(body)" v-if="body.type === 'planet'">{{body.name}}</li>
       </ul> -->
     </div>
-    <div class="planet-data">
-      <space-body :body="bodySelect"></space-body>
-      <!-- <list-item :body="bodySelect"></list-item> -->
-    </div>
     <div class="planet-fact">
       <space-fact :body="bodySelect"></space-fact>
     </div>
+    <div >
+      <space-body :body="bodySelect"></space-body>
+      <!-- <list-item :body="bodySelect"></list-item> -->
+    </div>
+
   </div>
 </template>
 
@@ -60,11 +61,14 @@ export default {
 
 
 .planet-data{
-  display: flex;
+  /* display: flex;
   flex-direction: left;
-  height: 100%;
-  width: 80%;
-  justify-content: flex-start;
+  height: 0px;
+  width: 35%;
+  justify-content: flex-start; */
+  display: inline-block;
+  margin-top: 300px;
+
 }
 
 .planet-fact {

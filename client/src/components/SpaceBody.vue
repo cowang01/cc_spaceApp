@@ -1,12 +1,12 @@
 <template lang="html">
 
-  <div class="planet-info">
-    <ul v-for="(item, key) in displayBody"/>
-      <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li>
+  <div v-if="body">
+    <!-- <ul v-for="(item, key) in displayBody"/>
+      <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li> -->
 
-  <div class="">
+
     <!-- <ul v-for="(item, key) in displayBody"> -->
-    <div v-if="body">
+    <div class="planet-info">
       <h3>{{displayBody.name}}</h3>
       <img class="planet-img" :src="displayBody.img" />
       <h4>Orbital Period:  {{displayBody.orbitalPeriodPYear}}</h4>
@@ -17,7 +17,7 @@
       <h4>Temperature: {{displayBody.temperature}}</h4>
       <h4>Description:  {{displayBody.description}}</h4>
     </div>
-  </div>
+
     <!-- </ul> -->
   </div>
 </template>
@@ -42,23 +42,27 @@ export default {
 </script>
 
 <style lang="css" scoped>
-ul{
-  text-align: left;
-  list-style: none;
-}
+
 
   .planet-info {
-    /* width: 25%; */
-  	margin: 0 auto;
-  	background: rgba(255, 255, 255, 0.6);
-    position: relative;
-    left: 5px;
-    width: 15%;
-  	margin-left: 0px;
-  	background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 16px;
+    background-size: contain;
     color: white;
-  	padding: 20px;
-  	margin-bottom: 30px;
+    border: white;
+    background: rgba(255, 255, 255, 0.3);
+
+
+    width: 50%;
+    max-height: 200px;
+    border-style: solid;
+    overflow: scroll;
 }
 p {
   text-align: left;
