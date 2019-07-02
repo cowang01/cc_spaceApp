@@ -75,6 +75,7 @@ export default {
   animation-duration: 40s;
   animation-iteration-count: 10;
   animation-delay: 0s;
+  border-radius: 16px;
 }
 
 @keyframes rotate {

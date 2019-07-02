@@ -68,6 +68,7 @@ export default {
   justify-content: flex-start; */
   display: inline-block;
   margin-top: 300px;
+  text-align: center;
 
 }
 

@@ -7,7 +7,7 @@
 
     <!-- <ul v-for="(item, key) in displayBody"> -->
     <div class="planet-info">
-      <h3>{{displayBody.name}}</h3>
+      <h2>{{displayBody.name}}</h2>
       <img class="planet-img" :src="displayBody.img" />
       <h4>Orbital Period:  {{displayBody.orbitalPeriodPYear}}</h4>
       <h4>Length Of One Day:  {{displayBody.rotationalPeriodDay}}</h4>
@@ -47,19 +47,20 @@ export default {
   .planet-info {
     display: inline-block;
     position: absolute;
-    left: 25%;
+    left: 32%;
     top: 75%;
     font-style: italic;
     font-size: 20px;
     text-align: center;
     border-radius: 16px;
     background-size: contain;
-    color: white;
+    color: ##e1e2e3;
     border: white;
     background: rgba(255, 255, 255, 0.3);
+    line-height: 0.5em;
 
 
-    width: 50%;
+    width: 35%;
     max-height: 200px;
     border-style: solid;
     overflow: scroll;
@@ -69,7 +70,12 @@ p {
 
 }
 h4 {
-  text-align: left;
+  text-align: center;
+  font-style: normal;
+}
+h2 {
+  text-align: center;
+  font-size: italic
 }
 
 </style>

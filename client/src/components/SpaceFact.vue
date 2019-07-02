@@ -45,7 +45,6 @@ export default {
 
   .fact-box {
     display: inline-block;
-
     font-style: italic;
     font-size: 30px;
     text-align: center;
