@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <map name="planetmap">
-      <img src="../dist/img/planet.jpeg"  alt="Planets" usemap="#planetmap">
+      <img class="map" src="../dist/img/planet.jpeg"  alt="Planets" usemap="#planetmap">
       <area shape="poly" coords="0,144,26,158,47,170,83,196,129,236,163,277,188,316,211,364,228,418,233,473,235,510,229,547,220,596,209,632,192,668,174,699,148,736,129,760,94,788,61,812,19,835,1,843" alt="Sun" v-on:click="sendName('Sun')">
       <area shape="poly" coords="321,515,329,517,335,519,340,524,344,531,345,539,344,547,340,558,330,563,318,564,307,561,301,553,297,544,297,536,301,526,309,519" alt="Mercury" v-on:click="sendName('Mercury')">
       <area shape="poly" coords="471,490,482,493,490,498,499,505,507,516,511,527,513,537,513,546,511,555,508,563,504,571,498,577,492,581,486,585,478,589,470,591,461,590,452,587,446,583,438,577,431,570,425,560,421,548,419,533,422,520,429,509,441,498,458,492" alt="Venus" v-on:click="sendName('Venus')">
@@ -14,6 +14,8 @@
       <area shape="poly" coords="1812,479,1830,484,1848,496,1858,510,1868,527,1870,541,1867,559,1860,572,1851,585,1842,592,1832,598,1818,602,1797,601,1778,596,1766,585,1757,575,1751,565,1747,553,1746,538,1748,519,1756,505,1768,492,1783,482" alt="Neptune" v-on:click="sendName('Neptune')">
     </map>
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
+    <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
+    <img class="asteroid" src="../dist/img/asteroid.jpeg" width="170" height="170" alt="Black Hole">
     <router-view id="App"></router-view>
   </div>
 </template>
@@ -32,11 +34,6 @@ export default {
       selectedBody: null
     }
   },
-  mounted(){
-    // fetch('http://localhost:3000/')
-    // .then(res => res.json())
-    // .then(json => this.serverMessage = json.message);
-  },
   methods: {
     sendName(name){
       console.log('test-function_', name)
@@ -47,20 +44,31 @@ export default {
 </script>
 
 <style>
-#planetmap {
-  /* background-image: url("../dist/img/planet.jpeg"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: 100%;
-  background-image:90%; */
-}
-img {
+
+.map {
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: -1;
 }
 
+.black-hole {
+  position: fixed;
+  right: 50px;
+  top: 150px;
+  border-radius: 35px 70px 50px 35px;
+  z-index: -1;
+
+}
+
+.asteroid {
+  position: fixed;
+  right: 50px;
+  top: 800px;
+  border-radius: 35px 70px 50px 35px;
+  z-index: -1;
+
+}
 
 
 #app {

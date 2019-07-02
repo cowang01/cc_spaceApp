@@ -1,22 +1,23 @@
 <template lang="html">
-<<<<<<< HEAD
+
   <div class="planet-info">
-    <ul v-for="(item, key) in displayBody">
+    <ul v-for="(item, key) in displayBody"/>
       <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li>
-=======
+
   <div class="">
     <!-- <ul v-for="(item, key) in displayBody"> -->
-    <ul v-if="body">
-      <li>Name:  {{displayBody.name}}</li>
-      <li>Orbital Period:  {{displayBody.orbitalPeriodPYear}}</li>
-      <li>Length Of One Day:  {{displayBody.rotationalPeriodDay}}</li>
-      <li>Distance From Sun:  {{displayBody.distanceFromSun}}</li>
-      <li>Diameter:  {{displayBody.diameter}}</li>
-      <li>Number of Satalites:  {{displayBody.numberOFSatalites}}</li>
-      <li>Temperature:  {{displayBody.temperature}}</li>
-      <li>Description:  {{displayBody.description}}</li>
->>>>>>> 04a044f7a52c2e94924a14bde8341d3f73c19f58
-    </ul>
+    <div v-if="body">
+      <h3>{{displayBody.name}}</h3>
+      <img class="planet-img" :src="displayBody.img" />
+      <h4>Orbital Period:  {{displayBody.orbitalPeriodPYear}}</h4>
+      <h4>Length Of One Day:  {{displayBody.rotationalPeriodDay}}</h4>
+      <h4>Distance From Sun:  {{displayBody.distanceFromSun}}</h4>
+      <h4>Diameter:  {{displayBody.diameter}}</h4>
+      <h4>Number of Satallites:  {{displayBody.numberOfSatellites}}</h4>
+      <h4>Temperature: {{displayBody.temperature}}</h4>
+      <h4>Description:  {{displayBody.description}}</h4>
+    </div>
+  </div>
     <!-- </ul> -->
   </div>
 </template>
@@ -47,11 +48,21 @@ ul{
 }
 
   .planet-info {
-    width: 25%;
-  	margin: 0 auto;
-  	background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    left: 5px;
+    width: 15%;
+  	margin-left: 0px;
+  	background: rgba(255, 255, 255, 0.3);
+    color: white;
   	padding: 20px;
   	margin-bottom: 30px;
+}
+p {
+  text-align: left;
+
+}
+h4 {
+  text-align: left;
 }
 
 </style>

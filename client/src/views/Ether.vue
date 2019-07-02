@@ -1,16 +1,17 @@
 <template lang="html">
   <div class="">
     <h1>BBC DiscoverED</h1>
-    <div class="planets">
+    <div>
       <!-- <ul class="planets" v-for="body in all_planets">
         <li v-on:click="bodyChoice(body)" v-if="body.type === 'planet'">{{body.name}}</li>
       </ul> -->
     </div>
-    <br>
     <div class="planet-data">
       <space-body :body="bodySelect"></space-body>
-      <space-fact :body="bodySelect"></space-fact>
       <!-- <list-item :body="bodySelect"></list-item> -->
+    </div>
+    <div class="planet-fact">
+      <space-fact :body="bodySelect"></space-fact>
     </div>
   </div>
 </template>
@@ -56,30 +57,36 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.planets{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  list-style: none;
-}
+
 
 .planet-data{
   display: flex;
-  flex-direction: column;
+  flex-direction: left;
   height: 100%;
-  width: 40%;
-  justify-content: flex-end;
+  width: 80%;
+  justify-content: flex-start;
 }
 
+.planet-fact {
+  position: relative;
+  bottom: 0px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  height: 0;
+  border-radius: 16px;
+}
 space-body{
   width: 60%;
-  height: 20vh;
+  height: 40vh;
+  font-size: 40px;
 }
 
-space-fact{
-  width: 40%;
-  height: 20vh;
+h1 {
+  text-align: center;
+  font-size: 75px;
+
 }
+
 
 </style>
