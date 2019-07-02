@@ -42,7 +42,7 @@ ul{
 }
 
   .planet-info {
-    width: 25%;
+    /* width: 25%; */
   	margin: 0 auto;
   	background: rgba(255, 255, 255, 0.6);
   	padding: 20px;
