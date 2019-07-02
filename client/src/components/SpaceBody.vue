@@ -1,11 +1,7 @@
 <template lang="html">
-<<<<<<< HEAD
   <div class="planet-info">
-    <ul v-for="(item, key) in displayBody">
-      <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li>
-=======
-  <div class="">
-    <!-- <ul v-for="(item, key) in displayBody"> -->
+    <!-- <ul v-for="(item, key) in displayBody">
+      <li v-if="key != '_id' && key != 'type'">{{key}}:  {{item}}</li> -->
     <ul v-if="body">
       <li>Name:  {{displayBody.name}}</li>
       <li>Orbital Period:  {{displayBody.orbitalPeriodPYear}}</li>
@@ -15,7 +11,6 @@
       <li>Number of Satalites:  {{displayBody.numberOFSatalites}}</li>
       <li>Temperature:  {{displayBody.temperature}}</li>
       <li>Description:  {{displayBody.description}}</li>
->>>>>>> 04a044f7a52c2e94924a14bde8341d3f73c19f58
     </ul>
     <!-- </ul> -->
   </div>
