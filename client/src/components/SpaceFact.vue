@@ -44,13 +44,13 @@ export default {
 <style lang="css" scoped>
 
   .fact-box {
-    border-style: solid;
-    border-color: black;
-    border-width: thin;
+    font-style: italic;
+    font-size: 30px;
     text-align: center;
-    align-items: center;
-    height: 20%;
     border-radius: 16px;
+    background-size: contain;
+    color: white;
+    border: white;
   }
 </style>
 
