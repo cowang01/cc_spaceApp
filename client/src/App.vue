@@ -15,6 +15,7 @@
       <area shape="poly" coords="1812,479,1830,484,1848,496,1858,510,1868,527,1870,541,1867,559,1860,572,1851,585,1842,592,1832,598,1818,602,1797,601,1778,596,1766,585,1757,575,1751,565,1747,553,1746,538,1748,519,1756,505,1768,492,1783,482" alt="Neptune" v-on:click="sendName('Neptune')">
     </map>
     <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')">
+    <img id="dwarfPlanets" src="../dist/img/pluto.png" alt="Dwarf Planets">
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <a id="shuttle-img" href="/shuttle.html"><img src="../dist/img/shuttle2.jpg" alt="Space Shuttle"></a>
     <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
@@ -131,5 +132,18 @@ export default {
   top: 9%;
   /* z-index: -1; */
 
+}
+
+#dwarfPlanets{
+  width: 150px;
+  position: absolute;
+  left: 350px;
+  bottom: 5%;
+  z-index: -1;
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+  animation-delay: 0s;
+  border-radius: 630px;
 }
 </style>
