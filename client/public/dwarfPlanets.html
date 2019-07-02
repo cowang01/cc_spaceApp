@@ -6,13 +6,17 @@
   </head>
   <body>
     <h1>Dwarf Planets</h1>
-    <img src="../dist/img/pluto.png" alt="">
+    <img id="pluto" src="../dist/img/pluto.png" alt="">
     <div class="info">
       <table>
         <th>Dwart Planet:</th>
         <td>Pluto</td>
+
       </table>
     </div>
+    <img id="Ceres" src="../dist/img/Ceres.jpg" alt="">
+    <img id="MakeMake" src="../dist/img/dwarf-planet-makemake-01.jpg" alt="">
+
   </body>
 </html>
 <style lang="css" scoped>
@@ -29,7 +33,7 @@
     text-align: center;
   }
 
-  img{
+  #pluto {
     width: 400px;
     position: relative;
     left: 35%;
@@ -45,9 +49,17 @@
     to {transform: rotate(180deg);}
   }
 
+
+
+  #Ceres {
+    width: 400px;
+  }
+
+  #MakeMake {
+    width: 450px;
+  }
+
   .info {
-    position: relative;
-    left: 100px;
     color: white;
   }
 
