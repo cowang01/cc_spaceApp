@@ -18,6 +18,13 @@
     <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
     <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
     <router-view id="App"></router-view>
+    <div class="form">
+      <form v-on:submit.prevent="createAsteroid">
+        <input type="text" placeholder="Name Your Comet" name="title">
+        <input id="buttoned" type="submit" value="Name">
+      </form>
+      <p id="cometName" v-if="cometShow">{{cometTitle}}</p>
+    </div>
   </div>
 </template>
 
@@ -32,13 +39,19 @@ export default {
   data () {
     return {
       bodies: [],
-      selectedBody: null
+      selectedBody: null,
+      cometTitle: '',
+      cometShow: false
     }
   },
   methods: {
     sendName(name){
       // console.log('test-function_', name)
       eventBus.$emit('body-name', name);
+    },
+    createAsteroid(submitEvent){
+      this.cometTitle = submitEvent.target.elements.title.value
+      this.cometShow = true
     }
   }
 }
@@ -89,5 +102,24 @@ export default {
   text-align: center;
   color: white;
   margin-top: 60px;
+}
+
+.form {
+  position: fixed;
+  left: 2%;
+  top: 95%;
+  width: auto;
+}
+
+#buttoned {
+  background-color: #bec246;
+}
+
+#cometName {
+  position: fixed;
+  left: 82%;
+  top: 92%;
+  color: #d7d7d9;
+  font-family: tahoma;
 }
 </style>
