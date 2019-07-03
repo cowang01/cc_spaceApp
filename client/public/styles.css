@@ -13,6 +13,11 @@ body {
   text-align: center;
 }
 
+#shuttle-body .shuttle-text {
+  width: 70%;
+  margin-left: 15%;
+}
+
 h1 {
   margin: auto;
   background-color: #333;
