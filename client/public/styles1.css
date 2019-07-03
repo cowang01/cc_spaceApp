@@ -81,57 +81,41 @@ p {
   color: black;
 }
 
-#dwarfCeres{
+#dwarf {
   font-family: 'Raleway', sans-serif;
   border-collapse: collapse;
-  width: 15%;
-  position: relative;
-  left: 3%;
-}
- #dwarfMakeMake {
-  font-family: 'Raleway', sans-serif;
-  border-collapse: collapse;
-  width: 15%;
-  position: relative;
-  left: 27%;
-  top: 10%;
+
 }
 
-#dwarfEris {
- font-family: 'Raleway', sans-serif;
- border-collapse: collapse;
- width: 15%;
- position: relative;
- left: 3%;
-}
-
-#dwarfHaumea {
- font-family: 'Raleway', sans-serif;
- border-collapse: collapse;
- width: 15%;
- position: relative;
- left: 3%;
-}
-
-
-
-
-#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea td, #dwarfCeres,#dwarfMakeMake, #dwarfEris, #dwarfHaumea th {
+#dwarf td, #dwarf th {
   /* border: 1px solid; */
   padding: 8px;
 }
 
-#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
+#dwarf tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
 
-#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea tr:hover {background-color: #ddd;}
+#dwarf tr:hover {background-color: #ddd;}
 
-#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea th {
+#dwarf th {
   padding-top: 12px;
   /* padding-bottom: 12px; */
   text-align: left;
   background: rgba(255, 255, 255, 0.6);
   color: black;
 }
+
+
+
+ .planets{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 0 3em 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
 
 
 #Ceres {
@@ -142,7 +126,6 @@ p {
 
 #MakeMake {
   width: 480px;
-
 }
 #Eris{
 
@@ -153,10 +136,5 @@ p {
 
 #Haumea{
   position: relative;
-  right: 0px;
-
-
-}
-.info {
-  color: white;
+  right: 0%;
 }
