@@ -23,16 +23,18 @@ h1 {
 }
 
 .black_hole_left {
+  margin-top: 190px;
   float: left;
   width: 350px;
 }
 
 .black_hole_right {
+  margin-top: 190px;
   float: right;
   width: 350px;
 }
 
-/* .black_hole_centre {
-  float: center;
-  width: 200px;
-} */
+.black_hole_bottom {
+  position: fixed;
+   bottom: 0;
+}
