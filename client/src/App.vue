@@ -140,6 +140,7 @@ body{
 
 #shuttle-img {
   position: absolute;
+  border-radius: 18px;
   right: 69%;
   top: 9%;
   /* z-index: -1; */
@@ -161,6 +162,7 @@ body{
 
 #asteroid-img{
   position: absolute;
+  border-radius: 20px;
   right: 18%;
   top: 22%;
 }
