@@ -6,6 +6,21 @@ body {
   background-size: cover;
 }
 
+<<<<<<< HEAD
+=======
+#shuttle-body {
+  background-image: url("/shuttle_backdrop.jpg");
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#shuttle-body .shuttle-text {
+  width: 70%;
+  margin-left: 15%;
+}
+
+>>>>>>> 7dbbfabaf8e632a0a788646b0289e687cf8df53e
 h1 {
   margin: auto;
   background-color: #333;
