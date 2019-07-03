@@ -83,7 +83,7 @@ body{
   position: absolute;
   right: 50px;
   top: 100px;
-  z-index: -1;
+  /* z-index: -1; */
   animation-name: rotate;
   animation-duration: 40s;
   animation-iteration-count: 10;
