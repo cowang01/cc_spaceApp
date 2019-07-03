@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <map name="planetmap">
+    <router-link :to="{ name: 'ether'}"><map name="planetmap">
       <img class="map" src="../dist/img/planet.jpeg"  alt="Planets" usemap="#planetmap">
       <area shape="poly" coords="0,144,26,158,47,170,83,196,129,236,163,277,188,316,211,364,228,418,233,473,235,510,229,547,220,596,209,632,192,668,174,699,148,736,129,760,94,788,61,812,19,835,1,843" alt="Sun" v-on:click="sendName('Sun')">
 
@@ -13,10 +13,13 @@
       <area shape="poly" coords="1198,506,1215,497,1238,489,1268,485,1293,488,1314,487,1321,488,1334,484,1347,485,1360,486,1370,489,1380,494,1387,501,1394,506,1411,512,1432,521,1447,527,1465,539,1479,553,1490,568,1492,581,1484,591,1470,599,1443,604,1424,605,1400,607,1380,605,1371,606,1360,607,1346,608,1334,609,1319,606,1308,600,1298,588,1294,582,1289,585,1282,584,1270,579,1258,573,1247,569,1235,563,1221,555,1210,545,1201,535,1195,522" alt="Saturn" v-on:click="sendName('Saturn')">
       <area shape="poly" coords="1609,495,1624,497,1638,504,1645,512,1653,523,1660,539,1659,556,1655,568,1647,578,1636,588,1624,594,1605,594,1591,590,1577,580,1569,568,1563,553,1562,537,1567,521,1577,506,1595,496" alt="Uranus" v-on:click="sendName('Uranus')">
       <area shape="poly" coords="1812,479,1830,484,1848,496,1858,510,1868,527,1870,541,1867,559,1860,572,1851,585,1842,592,1832,598,1818,602,1797,601,1778,596,1766,585,1757,575,1751,565,1747,553,1746,538,1748,519,1756,505,1768,492,1783,482" alt="Neptune" v-on:click="sendName('Neptune')">
-    </map>
-    <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')">
-    <a id="pluto-img" href="/dwarfPlanets.html"><img id="dwarfPlanets" src="../dist/img/pluto.png" alt="Dwarf Planets"></a>
-    <!-- <router-link :to="{ name: 'ether'}">Ether</router-link> -->
+    </map></router-link>
+    <router-link :to="{ name: 'ether'}"> <img id="comet-img" src="../dist/img/comet2.jpg" alt="imposed comet image" v-on:click="sendName('Comet')"></router-link>
+    <img id="dwarfPlanets" src="../dist/img/pluto.png" alt="Dwarf Planets">
+
+    <router-link id="asteroid-img" :to="{ name: 'question1'}"> <img src="../dist/img/asdteroid2.jpg"> </router-link>
+
+
     <a id="shuttle-img" href="/shuttle.html"><img src="../dist/img/shuttle2.jpg" alt="Space Shuttle"></a>
     <img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole">
     <router-view id="App"></router-view>
@@ -135,7 +138,6 @@ body{
   right: 69%;
   top: 9%;
   /* z-index: -1; */
-
 }
 
 #dwarfPlanets{
@@ -149,5 +151,11 @@ body{
   animation-iteration-count: 10;
   animation-delay: 0s;
   border-radius: 630px;
+}
+
+#asteroid-img{
+    position: absolute;
+    right: 18%;
+    top: 22%;
 }
 </style>
