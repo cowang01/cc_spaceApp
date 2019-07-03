@@ -2,65 +2,72 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles1.css">
     <title>Dwarf Planets</title>
   </head>
   <body>
-    <h1>Dwarf Planets</h1>
-    <img id="pluto" src="../dist/img/pluto.png" alt="">
+    <header>
+        <h1>Dwarf Planets</h1>
+     <img id="pluto" src="./pluto.png" alt="Pluto">
     <div class="info">
-      <table>
-        <th>Dwart Planet:</th>
-        <td>Pluto</td>
-
+      <table id="dwarfPlanet">
+        <tr>
+          <th>Planet Name:</th>
+          <th>Distance From the Sun:</th>
+          <th>Length Of The Day:</th>
+          <th>Length Of The Year:</th>
+          <th>Planet Type:</th>
+        </tr>
+        <tr>
+          <td>Pluto</td>
+          <td>3,144,845,450 miles.</td>
+          <td>153 Earth hours.</td>
+          <td>90,530 Earth days.</td>
+          <td>Dwarf Planet</td>
+        </tr>
       </table>
     </div>
-    <img id="Ceres" src="../dist/img/Ceres.jpg" alt="">
-    <img id="MakeMake" src="../dist/img/dwarf-planet-makemake-01.jpg" alt="">
+    <br>
+    </header>
+    <p>A dwarf planet is a planetary-mass object that is neither a true planet nor a natural satellite. That is, it is in direct orbit of a star, and is massive enough for its gravity to compress it into
+       hydrostatically equilibrious shape (usually a spheroid), but has not cleared the neighborhood of
+      other material around its orbit.</p>
+
+        <img id="Ceres" src="./Ceres.jpg" alt="Planet Ceres">
+        <img id="MakeMake" src="./dwarf-planet-makemake-01.jpg" alt="Planet Makemake">
+        <img id="Eris" src="./Eris.png" alt="Planet Eris">
+        <iframe id="Haumea" src="https://solarsystem.nasa.gov/gltf_embed/2384" width="22%" height="350px" frameborder="0"></iframe>
+        <table id="dwarfCeres">
+          <tr>
+            <th>Ceres:</th>
+          </tr>
+          <tr>
+            <td>Distance From the Sun:</td>
+            <td>259,503,902 miles</td>
+          </tr>
+          <tr>
+            <td>Length Of The Day:</td>
+            <td>9 Earth hours.</td>
+          </tr>
+          <tr>
+            <td>Length Of The Year:</td>
+            <td>1,680 Earth days.</td>
+          </tr>
+        </table>
+        <table id="dwarfMakeMake">
+          <tr>
+            <th>MakeMake:</th>
+          </tr>
+          <tr>
+            <td>Distance From the Sun:</td>
+          </tr>
+          <tr>
+            <td>Length Of The Day:</td>
+          </tr>
+          <tr>
+            <td>Length Of The Year:</td>
+          </tr>
+        </table>
 
   </body>
 </html>
-<style lang="css" scoped>
-
-  body{
-    /* background-image: url('../dist/img/space.jpg'); */
-    /* background-repeat: no-repeat, repeat;
-    background-size: cover; */
-    background-color: black;
-
-  }
-  h1 {
-    color: white;
-    text-align: center;
-  }
-
-  #pluto {
-    width: 400px;
-    position: relative;
-    left: 35%;
-    animation-name: rotate;
-    animation-duration: 40s;
-    animation-iteration-count: 10;
-    animation-delay: 0s;
-    border-radius: 450px;
-  }
-
-  @keyframes rotate {
-    from {transform: rotate(10deg);}
-    to {transform: rotate(180deg);}
-  }
-
-
-
-  #Ceres {
-    width: 400px;
-  }
-
-  #MakeMake {
-    width: 450px;
-  }
-
-  .info {
-    color: white;
-  }
-
-</style>

@@ -1,0 +1,135 @@
+body{
+  /* background-image: url('./dwarfbackgroud.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover; */
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+
+}
+
+header {
+  background-image: url('./dwarfbackgroud.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  margin: auto;
+  width: 350px;
+  font-size: 50px;
+  /* border-style: solid;
+  border-color: white;
+  border-width: thin; */
+  position: relative;
+  left: 2%;
+
+
+}
+p {
+  margin: auto;
+  font-size: 25px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-right: 80px;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+
+#pluto {
+  width: 400px;
+  position: relative;
+  left: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: 10;
+  animation-delay: 0s;
+  border-radius: 450px;
+}
+
+@keyframes rotate {
+  from {transform: rotate(10deg);}
+  to {transform: rotate(180deg);}
+}
+
+#dwarfPlanet {
+  font-family: 'Raleway', sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+#dwarfPlanet td, #dwarfPlanet th {
+  /* border: 1px solid; */
+  padding: 8px;
+}
+
+#dwarfPlanet tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
+
+#dwarfPlanet tr:hover {background-color: #ddd;}
+
+#dwarfPlanet th {
+  padding-top: 12px;
+  /* padding-bottom: 12px; */
+  text-align: left;
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+#dwarfInfo {
+  font-family: 'Raleway', sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  position: relative;
+  left: 3%;
+}
+
+#dwarfInfo td, #dwarfInfo th {
+  /* border: 1px solid; */
+  padding: 8px;
+}
+
+#dwarfInfo tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
+
+#dwarfInfo tr:hover {background-color: #ddd;}
+
+#dwarfInfo th {
+  padding-top: 12px;
+  /* padding-bottom: 12px; */
+  text-align: left;
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+
+#Ceres {
+  width: 400px;
+
+
+}
+
+#MakeMake {
+  width: 480px;
+
+}
+#Eris{
+
+  width: 520px;
+  position: relative;
+  right: 3%;
+}
+
+#Haumea{
+  position: relative;
+  right: 0px;
+
+
+}
+.info {
+  color: white;
+}
