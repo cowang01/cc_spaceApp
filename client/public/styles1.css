@@ -81,24 +81,51 @@ p {
   color: black;
 }
 
-#dwarfInfo {
+#dwarfCeres{
   font-family: 'Raleway', sans-serif;
   border-collapse: collapse;
-  width: 90%;
+  width: 15%;
   position: relative;
   left: 3%;
 }
+ #dwarfMakeMake {
+  font-family: 'Raleway', sans-serif;
+  border-collapse: collapse;
+  width: 15%;
+  position: relative;
+  left: 27%;
+  top: 10%;
+}
 
-#dwarfInfo td, #dwarfInfo th {
+#dwarfEris {
+ font-family: 'Raleway', sans-serif;
+ border-collapse: collapse;
+ width: 15%;
+ position: relative;
+ left: 3%;
+}
+
+#dwarfHaumea {
+ font-family: 'Raleway', sans-serif;
+ border-collapse: collapse;
+ width: 15%;
+ position: relative;
+ left: 3%;
+}
+
+
+
+
+#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea td, #dwarfCeres,#dwarfMakeMake, #dwarfEris, #dwarfHaumea th {
   /* border: 1px solid; */
   padding: 8px;
 }
 
-#dwarfInfo tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
+#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea tr:nth-child(even){background: rgba(255, 255, 255, 0.3);}
 
-#dwarfInfo tr:hover {background-color: #ddd;}
+#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea tr:hover {background-color: #ddd;}
 
-#dwarfInfo th {
+#dwarfCeres, #dwarfMakeMake, #dwarfEris, #dwarfHaumea th {
   padding-top: 12px;
   /* padding-bottom: 12px; */
   text-align: left;

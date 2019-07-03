@@ -21,6 +21,7 @@
 
     <a id="black-hole" href="/black-hole.html"><img class="black-hole" src="../dist/img/black hole.jpg" width="170" height="170" alt="Black Hole"></a>
 
+
     <router-link id="asteroid-img" :to="{ name: 'question1'}"> <img src="../dist/img/asdteroid2.jpg"> </router-link>
 
     <a id="shuttle-img" href="/shuttle.html"><img src="../dist/img/shuttle2.jpg" alt="Space Shuttle"></a>
@@ -83,7 +84,7 @@ body{
   position: absolute;
   right: 50px;
   top: 100px;
-  z-index: -1;
+  /* z-index: -1; */
   animation-name: rotate;
   animation-duration: 40s;
   animation-iteration-count: 10;
