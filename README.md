@@ -20,7 +20,17 @@ SETUP
 -- in spaceApp/server
   'npm run seeds'
 
--- 'mongod'
+-- in spaceApp/server
+  'npm install express'
+
+-- in spaceApp/server
+  'npm install --save-dev nodemon'
+
+-- in spaceApp/server
+   'mongod'
+
+-- in spaceApp/server
+   'npm run server:dev'
 
 -- in spaceApp/client
   'npm install'
